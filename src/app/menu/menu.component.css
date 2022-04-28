@@ -1,0 +1,10 @@
+
+.font{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+a, p{
+  color: #0d6366
+}
+a:hover{
+  color: #923c0e;
+}
