@@ -1,0 +1,39 @@
+#imgBg{
+  background-image: url('https://images.pexels.com/photos/2624399/pexels-photo-2624399.jpeg?cs=srgb&dl=pexels-monicore-2624399.jpg&fm=jpg');
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.font, label, button{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p{
+  font-size: 25px;
+}
+label{
+  font-size: 1rem;
+}
+a, p, label, h6{
+  color: #0d6366;
+  text-decoration: none;
+}
+a:hover{
+  color: #923c0e;
+}
+.invert{
+  background-color: #923c0e;
+  border-radius: 0.25rem;
+  padding: 4px;
+}
+.invert:hover{
+  background-color: #0d6366;
+}
+button{
+  background-color: #0d6366;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: #923c0e;
+}

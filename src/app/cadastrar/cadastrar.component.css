@@ -1,0 +1,45 @@
+#imgBg{
+  background-image: url('https://images.pexels.com/photos/5076523/pexels-photo-5076523.jpeg?cs=srgb&dl=pexels-cottonbro-5076523.jpg&fm=jpg');
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.font, label, button{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p{
+  font-size: 26px;
+}
+label{
+  font-size: 14px;
+}
+a, p, label, h6{
+  text-decoration: none;
+}
+a:hover{
+  color: #923c0e;
+}
+.invert{
+  background-color: #923c0e;
+  border-radius: 0.25rem;
+  padding: 4px;
+  color: #ffc107;
+}
+.invert:hover{
+  background-color: #ffc107;
+  color:#923c0e
+}
+button{
+  background-color: #ffc107;
+  color:#923c0e;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: #923c0e;
+  color: #ffc107;
+}
+.bg{
+  background-color: #0d6366;
+}
