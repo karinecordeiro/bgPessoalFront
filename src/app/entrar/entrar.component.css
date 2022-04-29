@@ -5,35 +5,33 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.font, label, button{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+.bg{
+  background-color: #b6d7e2
 }
 p{
-  font-size: 25px;
+  font-size: 20px;
 }
 label{
-  font-size: 1rem;
+  font-size: 14px;
 }
 a, p, label, h6{
-  color: #0d6366;
+  color: #161c70;
+}
+a{
   text-decoration: none;
+  color:#ef476f
 }
 a:hover{
-  color: #923c0e;
-}
-.invert{
-  background-color: #923c0e;
-  border-radius: 0.25rem;
-  padding: 4px;
-}
-.invert:hover{
-  background-color: #0d6366;
+  color:#b90044;
 }
 button{
-  background-color: #0d6366;
+  background-color: #161c70;
+  color:#ffffff;
+  padding: 8px;
   border-radius: 0.25rem;
   border-color: transparent;
 }
 button:hover{
-  background-color: #923c0e;
+  background-color: #b90044;
+  color: #ffffff;
 }
