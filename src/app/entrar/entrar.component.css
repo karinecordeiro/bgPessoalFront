@@ -6,7 +6,7 @@
   background-size: cover;
 }
 .bg{
-  background-color: #b6d7e2
+  background-color: var(--azulBebe);
 }
 p{
   font-size: 20px;
@@ -15,23 +15,23 @@ label{
   font-size: 14px;
 }
 a, p, label, h6{
-  color: #161c70;
+  color: var(--azulEscuro);
 }
 a{
   text-decoration: none;
-  color:#ef476f
+  color: var(--rosaMedio);
 }
 a:hover{
-  color:#b90044;
+  color: var(--rosaEscuro);
 }
 button{
-  background-color: #161c70;
-  color:#ffffff;
+  background-color: var(--azulEscuro);
+  color: var(--branco);
   padding: 8px;
   border-radius: 0.25rem;
   border-color: transparent;
 }
 button:hover{
-  background-color: #b90044;
-  color: #ffffff;
+  background-color: var(--rosaEscuro);
+  color: var(--branco);
 }
