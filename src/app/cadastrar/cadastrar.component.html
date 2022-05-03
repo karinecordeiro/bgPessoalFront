@@ -4,42 +4,43 @@
       <div div class="row d-flex justify-content-center">
         <div class="col-md-8">
         <p class="text-center text-uppercase font-weight-bold">se cadastre aqui <i class="fa fa-arrow-circle-down pl-2" aria-hidden="true"></i></p>
+
         <form>
           <div class="form-group text-uppercase font-weight-bold">
             <label for="nome">Nome:</label>
-            <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite aqui seu nome...">
+            <input [(ngModel)]='usuario.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Digite aqui seu nome...">
           </div>
 
           <div class="form-group text-uppercase font-weight-bold">
             <label for="usuario">Usuário:</label>
-            <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite aqui seu usuário...">
+            <input [(ngModel)]='usuario.usuario' class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite aqui seu usuário...">
           </div>
 
           <div class="row">
             <div class="col-md-6">
               <div class="form-group text-uppercase font-weight-bold">
                 <label for="senha">Senha:</label>
-                <input class="form-control" type="password" name="senha" id="senha" placeholder="Digite aqui uma senha...">
+                <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Digite aqui uma senha...">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group text-uppercase font-weight-bold">
                 <label for="confirmarSenha"> Confirmar senha:</label>
-                <input class="form-control" type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Repita sua senha...">
+                <input [(ngModel)]='usuario.senha' class="form-control" type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Repita sua senha...">
               </div>
             </div>
           </div>
 
           <div class="form-group text-uppercase font-weight-bold">
             <label for="foto">Link da foto:</label>
-            <input class="form-control" type="text" name="foto" id="foto" placeholder="Cole seu link de imagem aqui...">
+            <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="foto" id="foto" placeholder="Cole seu link de imagem aqui...">
           </div>
 
           <div class="row  align-items-center justify-content-center">
             <div class="col-md-9">
               <div class="form-group text-uppercase font-weight-bold">
                 <label for="tipo">Tipo de usuário:</label>
-                <select class="form-control" name="tipo" id="tipo">
+                <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                   <option> Selecione um tipo de usuário</option>
                   <option value="normal">Normal</option>
                   <option value="adm">Administrador</option>
@@ -48,17 +49,18 @@
             </div>
             <div class="col-md-3 p-0">
               <div class="d-flex font-weight-bold">
-                <button type="submit">Cadastrar</button>
+                <button type="submit" (click)='cadastrar()'>Cadastrar</button>
               </div>
             </div>
           </div>
-          
+
           <hr class="mt-2 mb-3">
           <h6 class="text-center">Já tem uma conta? <a routerLink="/entrar" class="invert text-uppercase font-weight-bold">Faça o login</a></h6>
         </form>
       </div>
-     </div>
+    </div>
   </div>
+
     <div class="col-md-6 bg-dark" id="imgBg"></div>
   </div>
 </div>
