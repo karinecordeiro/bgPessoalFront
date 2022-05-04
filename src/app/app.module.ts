@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule} from '@angular/common/http'//esse precisa importar para linha  26 de imports
 import { FormsModule } from '@angular/forms';
 
+import { HashLocationStrategy , LocationStrategy } from '@angular/common';
+
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
@@ -28,7 +30,10 @@ import { InicioComponent } from './inicio/inicio.component';
     HttpClientModule, //esse foi importado da linha 4 de import
     FormsModule,
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

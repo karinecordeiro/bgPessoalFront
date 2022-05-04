@@ -6,10 +6,12 @@
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
     <ul class="navbar-nav mr-auto d-flex align-items-center">
       <li class="nav-item active">
-        <img src="https://images.pexels.com/photos/8894625/pexels-photo-8894625.jpeg?cs=srgb&dl=pexels-anastasia-latunova-8894625.jpg&fm=jpg" alt="foto usuario" width="50" height="50" class="img-fluid rounded-circle">
+        <!--todo: link da foto variavel-->
+        <img src="{{foto}}" alt="foto usuario" width="50" height="50" class="img-fluid rounded-circle">
       </li>
       <li class="nav-item pl-1">
-        <p class="m-0 font-weight-bold"> Nome do usuário</p>
+        <!--todo: nome do usuario variavel-->
+        <p class="m-0 font-weight-bold">{{nome}}</p>
       </li>
       <li class="nav-item pl-2">
         <a href="">
@@ -19,7 +21,8 @@
     </ul>
     <ul class="navbar-nav ml-auto d-flex align-items-center">
       <li class="nav-item pl-2">
-        <a href="">
+        <!--todo: botão para sair e apagar dados-->
+        <a class="link" (click)="sair()">
           <i class="fa fa-sign-out"aria-hidden="true"> <i class="pl-1 fonte font-weight-bold">SAIR</i> </i>
         </a>
       </li>

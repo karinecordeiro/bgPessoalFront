@@ -1,0 +1,9 @@
+.bg{
+  background-color: var(--azulBebe);
+}
+button{
+  border-radius: 0.25rem;
+}
+a{
+  color:var(--azulEscuro)
+}

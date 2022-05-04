@@ -2,8 +2,11 @@
 .bg{
   background-color: var(--azulBebe);
 }
-a, p{
+.link, a, p{
   color:var(--azulMedio);
+}
+.link{
+  cursor: pointer;
 }
 a:hover{
   color: var(--azulEscuro);

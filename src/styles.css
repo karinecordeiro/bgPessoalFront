@@ -7,3 +7,6 @@
   --rosaMedio:#ef476f;
   --rosaEscuro:#b90044;
 }
+html{
+  scroll-behavior: smooth;
+}
