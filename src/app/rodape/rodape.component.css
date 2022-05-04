@@ -1,11 +1,15 @@
 .bg{
   background-color: var(--azulBebe);
 }
+.p {
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+}
 a, p{
   color: var(--azulMedio);
 }
 a:hover{
-  color: var(--azulEscuro);
+  color: var(--rosaEscuro);
 }
 ul.link {
   list-style: none;

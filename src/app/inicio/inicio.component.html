@@ -1,21 +1,27 @@
 <div class="container-fluid bg">
   <div class="row d-flex justify-content-center align-items-center">
+     <!--todo: Parte da imagem-->
+     <div class="col-md-5 d-flex justify-content-center">
+      <img src="../../assets/imagem/Writing room-rafiki (1).svg" alt="umafoto" class="img-fluid">
+    </div>
+
     <!--todo: Parte de texto e botão-->
     <div class="col-md-5 text-center">
-        <h1>Seja Bem-Vinde!</h1> <!--! cor azul escuro no css-->
-        <h5>Conte algo novo aqui</h5> <!--! cor azul medio no css-->
-      <div class="m-3 d-flex justify-content-around">
-        <button data-toggle="modal" data-target="#ExemploModalCentralizado">Nova Postagem</button> <!--! editar botão no css-->
-        <a href="#postagens">Ver postagem</a> <!--! fazer tipo de um botão no css-->
+        <h1>Seja Bem-Vinde!</h1>
+        <h5>Conte algo novo aqui... Ou reveja postagens antigas</h5>
+      <div class="m-3 d-flex justify-content-around align-items-center">
+        <div class="col-md-6">
+          <button data-toggle="modal" data-target="#ExemploModalCentralizado">Nova Postagem</button>
+        </div>
+        <div class="col-md-6">
+          <a class="linkE text-weight-bold" href="#postagens"> Ver postagem </a>
+        </div>
       </div>
     </div>
-    <!--todo: Parte da imagem-->
-    <div class="col-md-5 d-flex justify-content-center">
-      <img src="../../assets/imagem/Designer girl-bro.svg" alt="umafoto" class="img-fluid">
-    </div>
-  </div>
+</div>
 </div>
 
+  <!--todo: Postagens-->
 <div class="container" id="postagens">
   <nav>
     <div class="nav nav-tabs d-flex justify-content-center my-3" id="nav-tab" role="tablist">
@@ -42,19 +48,19 @@
       <div class="modal-header">
         <h5 class="modal-title" id="TituloModalCentralizado">NOVA POSTAGEM</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
+          <span  aria-hidden="true">&times;</span>
         </button>
       </div>
 
       <div class="modal-body">
-          <div class="form-group">
+          <div class="form-group font-weight-bold">
             <label for="titulo">Título:</label>
-            <input type="text" class="form-control" id="titulo" placeholder="Digite um título...">
+            <input type="text" class="form-control" id="titulo" placeholder="digite seu título aqui... ">
 
             <label for="texto" class="mt-3">Seu texto:</label>
-            <textarea type="text" class="form-control" id="texto" rows="3" placeholder="Digite seu texto aqui..."> </textarea>
+            <textarea type="text" class="form-control" id="texto"  placeholder="o que deseja nos contar..."> </textarea>
 
-            <label for="tema" class="mt-3">Escolha um tema ou <a href="">cadastre um novo</a>: </label> <!--!colocar cor rosa escuro no A do css // a hover azul escuro-->
+            <label for="tema" class="mt-3">Escolha um tema ou<a data-dismiss="modal" routerLink="/tema">cadastre um novo</a></label>
             <select type="text" class="form-control" id="tema" placeholder="Digite um título...">
               <option value="">temas</option>
             </select>
@@ -62,8 +68,8 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">cancelar</button> <!--!colocar no css cor rosa escuro-->
-        <button type="button" class="btn btn-primary">publicar</button> <!--!colocar no css cor azul escuro-->
+        <button type="button" class="escuro" data-dismiss="modal">cancelar</button>
+        <button type="button" class="claro">publicar</button>
       </div>
     </div>
   </div>

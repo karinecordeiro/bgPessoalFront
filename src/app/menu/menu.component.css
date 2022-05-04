@@ -9,7 +9,7 @@
   cursor: pointer;
 }
 a:hover{
-  color: var(--azulEscuro);
+  color: var(--rosaEscuro);
 }
 button{
   background-color: var(--branco);
