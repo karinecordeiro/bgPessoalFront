@@ -15,12 +15,12 @@ export class AuthService {
   ) { }
 
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
-    return this.http.post<UsuarioLogin>('http://localhost:8080/usuario/logar', usuarioLogin) //colocar endpoints do back
+    return this.http.post<UsuarioLogin>('https://blogpessoalkarinec.herokuapp.com/usuario/logar', usuarioLogin) //colocar endpoints do back
 
   }
 
   cadastrar(usuario: Usuario): Observable<Usuario> {
-    return this.http.post<Usuario>('http://localhost:8080/usuario/cadastrar', usuario)//colocar endpoints do back
+    return this.http.post<Usuario>('https://blogpessoalkarinec.herokuapp.com/usuario/cadastrar', usuario)//colocar endpoints do back
 
   }
 
