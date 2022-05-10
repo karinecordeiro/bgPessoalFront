@@ -14,7 +14,7 @@
   color: var(--branco);
 }
 
-a{
+a, .tema{
   display: inline;
   color: var(--rosaMedio);
   padding:5px;
