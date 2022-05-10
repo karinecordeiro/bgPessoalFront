@@ -15,7 +15,7 @@ button{
   border-color: transparent;
 }
 button:hover{
-  background-color: var(--rosaMedio);
+  background-color: var(--azulEscuro);
   color: var(--branco);
 }
 .excluir{
@@ -26,6 +26,6 @@ button:hover{
   border-color: transparent;
 }
 .excluir:hover{
-  background-color: var(--azulMedio);
+  background-color: var(--rosaEscuro);
   color: var(--branco);
 }
