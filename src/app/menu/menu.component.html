@@ -13,10 +13,13 @@
         <!--todo: nome do usuario variavel-->
         <p class="m-0 pl-2 font-weight-bold">{{nome}}</p>
       </li>
+
+        <!-- todo: atualizar do usuario -->
       <li class="nav-item pl-2">
-        <a href="">
+        <a [routerLink]="['/usuario-edit', id]">
           <i class="fa fa-pencil" aria-hidden="true"></i>
         </a>
+
       </li>
     </ul>
     <ul class="navbar-nav ml-auto d-flex align-items-center">

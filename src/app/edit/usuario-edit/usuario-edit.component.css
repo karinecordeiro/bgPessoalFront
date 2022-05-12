@@ -1,0 +1,42 @@
+p{
+  font-size: 20px;
+}
+label{
+  font-size: 14px;
+}
+p, label, h6{
+  color: var(--rosaMedio);
+}
+a{
+  text-decoration: none;
+  color:var(--azulMedio);
+}
+a:hover{
+  color: var(--azulEscuro);
+}
+button{
+  background-color: var(--rosaMedio);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: var(--rosaEscuro);
+  color: var(--branco);
+}
+
+.atualiza{
+  background-color: var(--azulMedio);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+.atualiza:hover{
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+}
+h1{
+  color: var(--azulEscuro);
+}

@@ -58,6 +58,11 @@
             <small class="tema">Tema: {{item.tema.descricao}}</small>
             <p class="card-text mt-2">{{item.texto}}</p>
             <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} {{item.data | date: 'HH:mm'}}</small></p>
+          <div class="d-flex justify-content-around">
+            <a [routerLink]="['/postagem-edit', item.id]" class="linkB">ATUALIZAR</a>
+            <a [routerLink]="['/postagem-delete', item.id]" class="">EXCLUIR</a>
+          </div>
+
           </div>
       </div>
     </div>

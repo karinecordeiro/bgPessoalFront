@@ -21,11 +21,11 @@ export class PostagemService {
     return this.http.get<Postagem>(`https://blogpessoalkarinec.herokuapp.com/postagens/${id}`, this.token)
 
   }
-  postPostagem(Postagem: Postagem): Observable<Postagem>{
-    return this.http.post<Postagem> ('https://blogpessoalkarinec.herokuapp.com/postagens', Postagem, this.token)
+  postPostagem(postagem: Postagem): Observable<Postagem>{
+    return this.http.post<Postagem> ('https://blogpessoalkarinec.herokuapp.com/postagens', postagem, this.token)
   }
-  putPostagem(Postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem> ('https://blogpessoalkarinec.herokuapp.com/postagens', Postagem, this.token)
+  putPostagem(postagem: Postagem): Observable<Postagem>{
+    return this.http.put<Postagem> ('https://blogpessoalkarinec.herokuapp.com/postagens', postagem, this.token)
   }
   deletePostagem(id: number) {
     return this.http.delete(`https://blogpessoalkarinec.herokuapp.com/postagens/${id}`, this.token)

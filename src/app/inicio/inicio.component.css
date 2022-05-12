@@ -13,6 +13,12 @@
   background-color: var(--rosaMedio);
   color: var(--branco);
 }
+.linkB{
+  color:var(--azulMedio);
+}
+.linkB:hover{
+  color:black;
+}
 
 a, .tema{
   display: inline;

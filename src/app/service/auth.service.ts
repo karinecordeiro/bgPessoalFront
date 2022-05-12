@@ -33,6 +33,9 @@ export class AuthService {
     return this.http.post<Usuario>('https://blogpessoalkarinec.herokuapp.com/usuario/cadastrar', usuario)//colocar endpoints do back
 
   }
+  atualizar(usuario: Usuario): Observable<Usuario>{
+    return this.http.put<Usuario>('https://blogpessoalkarinec.herokuapp.com/usuario/atualizar', usuario, this.token)
+  }
 
   getByIdUsuario(id: number): Observable<Usuario>{
     return this.http.get<Usuario>(`https://blogpessoalkarinec.herokuapp.com/usuario/${id}`, this.token)
