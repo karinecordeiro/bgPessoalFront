@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule} from '@angular/common/http'//esse precisa importar para linha  26 de imports
+import { HttpClientModule} from '@angular/common/http'//esse precisa importar para linha  45 de imports
 import { FormsModule } from '@angular/forms';
 
 import { HashLocationStrategy , LocationStrategy } from '@angular/common';
@@ -20,6 +20,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { OrderModule } from 'ngx-order-pipe';
 
 
 
@@ -45,6 +46,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     HttpClientModule, //esse foi importado da linha 4 de import
     FormsModule,
     ModalModule.forRoot(),
+    OrderModule
   ],
   providers: [{
     provide: LocationStrategy,

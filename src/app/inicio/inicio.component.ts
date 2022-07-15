@@ -26,6 +26,9 @@ export class InicioComponent implements OnInit {
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
 
+  key = 'data'
+  reverse = true
+
   constructor(
     private router : Router,
     private postagemService: PostagemService,
@@ -38,7 +41,7 @@ export class InicioComponent implements OnInit {
     window.scroll(0, 0)
 
     if(environment.token == ""){
-      alert('Sua sessão expirou. Faça seu login novamente!')
+      this.alertas.showAlertInfo('Sua sessão expirou. Faça seu login novamente!')
   this.router.navigate(['/entrar'])
   }
   this.authService.refreshToken()
