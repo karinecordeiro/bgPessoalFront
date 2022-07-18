@@ -18,10 +18,12 @@ import { TemaService } from '../service/tema.service';
 export class InicioComponent implements OnInit {
   listaPostagens: Postagem[]
   postagem: Postagem = new Postagem ()
+  tituloPost: string
 
   listaTemas: Tema[]
   idTema: number
   tema: Tema = new Tema()
+  descricaoTema: string
 
   usuario: Usuario = new Usuario()
   idUsuario = environment.id
@@ -85,6 +87,28 @@ findByIdUsuario(){
     })
   }
 
+  findByTituloPostagem(){
+
+    if(this.tituloPost == ''){
+      this.getAllPostagens()
+    }else {
+      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[]) =>{
+        this.listaPostagens = resp
+      })
+    }
+  }
+
+  findByDescricaoTema(){
+
+    if(this.descricaoTema == ''){
+      this.getAllTemas()
+    }else {
+      this.temaService.getByDescricaoTema(this.descricaoTema).subscribe((resp: Tema[]) =>{
+        this.listaTemas = resp
+      })
+    }
+
+  }
 
 }
 
