@@ -125,7 +125,7 @@
             <label for="texto" class="mt-3">Seu texto:</label>
             <textarea [(ngModel)]="postagem.texto" name="titulo" type="text" class="form-control" id="texto"  placeholder="o que deseja nos contar..."> </textarea>
 
-            <label for="tema" class="mt-3">Escolha um tema ou<a data-dismiss="modal" routerLink="/tema">cadastre um novo</a></label>
+            <label for="tema" class="mt-3">Escolha um tema <span *ngIf="authService.adm()">ou</span><a data-dismiss="modal" routerLink="/tema" *ngIf="authService.adm()">cadastre um novo</a></label>
             <select class="form-control" id="tema" name="tema" [(ngModel)]="idTema" (change)="findByIdTema()">
               <option *ngFor="let item of listaTemas" value="{{item.id}}">{{item.descricao}}</option>
             </select>
