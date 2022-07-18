@@ -1,0 +1,37 @@
+#imgBg{
+  background-image: url('https://images.pexels.com/photos/2624399/pexels-photo-2624399.jpeg?cs=srgb&dl=pexels-monicore-2624399.jpg&fm=jpg');
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg{
+  background-color: var(--azulBebe);
+}
+p{
+  font-size: 20px;
+}
+label{
+  font-size: 14px;
+}
+a, p, label, h6{
+  color: var(--azulEscuro);
+}
+a{
+  text-decoration: none;
+  color: var(--rosaMedio);
+}
+a:hover{
+  color: var(--rosaEscuro);
+}
+button{
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: var(--rosaEscuro);
+  color: var(--branco);
+}

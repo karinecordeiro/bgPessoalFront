@@ -1,0 +1,37 @@
+#imgBg{
+  background-image: url('https://images.pexels.com/photos/5076523/pexels-photo-5076523.jpeg?cs=srgb&dl=pexels-cottonbro-5076523.jpg&fm=jpg');
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p{
+  font-size: 20px;
+}
+label{
+  font-size: 14px;
+}
+a, p, label, h6{
+  color: var(--rosaMedio);
+}
+a{
+  text-decoration: none;
+  color:var(--azulMedio);
+}
+a:hover{
+  color: var(--azulEscuro);
+}
+button{
+  background-color: var(--rosaMedio);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+}
+.bg{
+  background-color: var(--rosaBebe);
+}

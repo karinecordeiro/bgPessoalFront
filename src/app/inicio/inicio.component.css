@@ -1,0 +1,87 @@
+.bg{
+  background-color: var(--azulBebe);
+}
+
+.linkE{
+  background-color: var(--azulMedio);
+  color:var(--branco);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  padding: 15px;
+}
+.linkE:hover{
+  background-color: var(--rosaMedio);
+  color: var(--branco);
+}
+.linkB{
+  color:var(--azulMedio);
+}
+.linkB:hover{
+  color:black;
+}
+
+a, .tema{
+  display: inline;
+  color: var(--rosaMedio);
+  padding:5px;
+}
+a:hover{
+  color: var(--azulEscuro);
+  text-decoration: none;
+}
+
+button{
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+  padding: 12px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: var(--rosaEscuro);
+  color: var(--branco);
+}
+h1, h2{
+  color: var(--azulEscuro)
+}
+h5, label{
+  color: var(--azulMedio)
+}
+.escuro{
+  background-color: var(--rosaEscuro);
+  color: var(--branco);
+}
+.escuro:hover{
+  background-color: var(--rosaMedio) ;
+  color: var(--branco);
+  padding: 10px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+.claro{
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+  padding: 10px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+.claro:hover{
+  background-color: var(--azulMedio) ;
+  color: var(--branco);
+}
+.modal-header .close {
+  background-color: var(--branco);
+  color: var(--azulEscuro);
+  padding: 2px;
+  margin: 2px;
+}
+.modal-header .close:hover {
+  background-color: var(--branco);
+  color: var(--rosaEscuro);
+  padding: 2px;
+  margin: 2px;
+}
+input, textarea, select{
+  border-color: var(--azulBebe);
+  border-radius: 1rem;
+}

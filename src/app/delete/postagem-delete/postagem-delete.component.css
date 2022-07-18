@@ -1,0 +1,36 @@
+
+h1{
+  color: var(--azulEscuro);
+}
+.form-group, h4{
+  color: var(--azulMedio);
+}
+button{
+  background-color: var(--azulMedio);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+}
+.nao{
+  background-color: var(--rosaMedio);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+.nao:hover{
+  background-color: var(--rosaEscuro);
+  color: var(--branco);
+}
+a{
+  color: var(--rosaMedio) ;
+}
+a:hover{
+  color: var(--azulMedio);
+  text-decoration:none ;
+}

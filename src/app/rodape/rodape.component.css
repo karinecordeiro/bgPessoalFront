@@ -1,0 +1,25 @@
+.bg{
+  background-color: var(--azulBebe);
+}
+.p {
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+}
+a, p{
+  color: var(--azulMedio);
+}
+a:hover{
+  color: var(--rosaEscuro);
+}
+ul.link {
+  list-style: none;
+  padding: 0;
+}
+ul.link li{
+  display: inline;
+  margin: 0;
+  padding: 5px;
+}
+.fa{
+  font-size: 35px;
+}

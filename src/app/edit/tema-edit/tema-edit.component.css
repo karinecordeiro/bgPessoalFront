@@ -1,0 +1,28 @@
+h1{
+  color: var(--azulEscuro);
+}
+.form-group{
+  color: var(--azulMedio);
+}
+button{
+  background-color: var(--azulMedio);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+button:hover{
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+}
+.excluir{
+  background-color: var(--rosaMedio);
+  color: var(--branco);
+  padding: 8px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+}
+.excluir:hover{
+  background-color: var(--rosaEscuro);
+  color: var(--branco);
+}
